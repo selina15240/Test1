@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalEditActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/logober" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="날짜 : "
+        android:textSize="17dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="35dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="시간 : "
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        android:layout_marginTop="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="일정 : "
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="~"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText1"
+        app:layout_constraintStart_toEndOf="@+id/editText1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="~"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintStart_toEndOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="110dp"
+        android:hint="시작 날짜"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/editText1"
+        android:hint="종료 날짜"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="210dp"
+        android:hint="시작 시간"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/editText2"
+        android:hint="종료 시간"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="295dp"
+        android:layout_height="0dp"
+        android:hint="  일정을 입력해주세요."
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="315dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="450dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="538dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        android:layout_marginStart="50dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
